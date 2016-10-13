@@ -22,5 +22,10 @@ Docker image for magento php cli. It contains php7, composer and all the require
 
 Base Image: [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
 
+## Docker Pull Command
+```
+docker pull ojhaujjwal/magento-php-cli
+```
+
 ## Related Projects
 * [docker-magento-php-fpm](https://github.com/ojhaujjwal/docker-magento-php-fpm)
