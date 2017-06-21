@@ -3,7 +3,7 @@ docker-magento-php-cli
 Docker image for magento php cli. It contains php7, composer and all the required php extensions for running magento on cli.
 
 ## Installed components
-* php-cli(php7)
+* php-cli(php7.1)
 * composer
 * php extensions
   * curl
