@@ -27,5 +27,12 @@ Base Image: [phusion/baseimage-docker](https://github.com/phusion/baseimage-dock
 docker pull ojhaujjwal/magento-php-cli
 ```
 
+## Contribution
+* Clone the repository
+* Build Image: `docker build --no-cache -t magento-php-cli .`
+* Tag Image as latest: `docker tag magento-php-cli ojhaujjwal/magento-php-cli:latest`
+* Tag Image version: `docker tag magento-php-cli ojhaujjwal/magento-php-cli[:tag]`
+* Push to registry: `docker push ojhaujjwal/magento-php-cli[:tag]`
+
 ## Related Projects
 * [docker-magento-php-fpm](https://github.com/ojhaujjwal/docker-magento-php-fpm)
