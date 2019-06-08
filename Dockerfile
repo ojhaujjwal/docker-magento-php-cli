@@ -15,26 +15,30 @@ RUN apt-get install -y software-properties-common && \
 
 
 RUN apt-get install -y --force-yes \
-        php7.1-cli \
-        php7.1-common \
-        php7.1-curl \
-        php7.1-json \
-        php7.1-xml \
-        php7.1-mbstring \
-        php7.1-mcrypt \
-        php7.1-mysql \
-        php7.1-zip \
-        php7.1-gd \
-        php7.1-intl \
-        php7.1-soap \
+        php7.3-cli \
+        php7.3-common \
+        php7.3-curl \
+        php7.3-json \
+        php7.3-xml \
+        php7.3-mbstring \
+        php7.3-mysql \
+        php7.3-zip \
+        php7.3-gd \
+        php7.3-intl \
+        php7.3-soap \
         pkg-config \
         php-dev \
         libcurl4-openssl-dev \
         libedit-dev \
         libssl-dev \
         libxml2-dev \
+        libmcrypt-dev \
+        gcc \
+        autoconf \
+        libc-dev \
     && apt-get clean
 
+RUN pecl install mcrypt-1.0.2
 
 # Install composer and add its bin to the PATH.
 RUN curl -s http://getcomposer.org/installer | php && \
